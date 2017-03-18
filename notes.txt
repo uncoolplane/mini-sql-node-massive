@@ -1,0 +1,7 @@
+Terminal
+npm install ... installs listed dependencies
+
+CMD Window
+postgres-# create database Sandbox
+Previous connection kept
+postgres-# \connect Sandbox

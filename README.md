@@ -112,7 +112,7 @@ __ import it and use it in another file__
 Create a controller.js and put this code inside.
 
 ```
-var app = require('./index');
+var app = require('./index'); //alternate: rather than doing circular reference, pass in 'app'
 
 module.exports = {
     getPlanes: function(){
@@ -147,7 +147,7 @@ To pass that in change the query in controller.js to take parameters before the 
 db.get_planes([25], function(err, planes){
     console.log(err, planes);
 })
-```        
+```
 
 We are now getting all planes with a passenger count greater than 25.
 
